@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "endereço")  
+@Table(name = "endereco")  
 public class Endereco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
@@ -18,6 +18,9 @@ public class Endereco {
     private String estado;
     private String cep;
 
+    
+public Endereco() {
+    }
 
 public Endereco(Long id, String rua, String cidade, String estado, String cep) {
     this.id= id;
